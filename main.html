@@ -1,0 +1,47 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcultor</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="result">
+                <div id="result-box"></div>
+            </div>
+            <div class="flex flex-row">
+                <div class="upper button opfunc">
+                    <button onclick="doAllClear()">AC</button>
+                    <button onclick="doCe()">CE</button>
+                    <button onclick="doOperation('/')">/</button>
+                    <button onclick="doOperation('*')">*</button>
+                </div>
+                <div class="numpad button numfunc">
+                    <button onclick="addNumber(7)">7</button>
+                    <button onclick="addNumber(8)">8</button>
+                    <button onclick="addNumber(9)">9</button>
+                    <button onclick="addNumber(4)">4</button>
+                    <button onclick="addNumber(5)">5</button>
+                    <button onclick="addNumber(6)">6</button>
+                    <button onclick="addNumber(3)">3</button>
+                    <button onclick="addNumber(2)">2</button>
+                    <button onclick="addNumber(1)">1</button>
+                    <div class="bellow button numfunc">
+                        <button class="two-row" onclick="addNumber(0)">0</button>
+                        <button onclick="addNumber('.')">.</button>
+                    </div>
+                </div>
+                <div class="operation button opfunc">
+                    <button onclick="doOperation('-')">-</button>
+                    <button onclick="doOperation('+')">+</button>
+                    <button onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="main.js"></script>
+
+</html>
